@@ -1,4 +1,4 @@
-# persona5_vuejs2
+# persona5_vue2
 
 ## Project setup
 ```
