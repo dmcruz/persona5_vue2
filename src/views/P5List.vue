@@ -8,38 +8,35 @@
     </a-space>
     <br /><br />
     <div class="content">
-      <a-row type="flex">
-        <a-col flex="550px" class="header-group">
+      <a-row type="flex" class="header-group">
+        <a-col flex="434px" class="tableBorderRightHead">
           Persona
         </a-col>
-        <a-col flex="290px" class="header-group">
+        <a-col flex="187px" class="tableBorderRightHead">
           Stats
         </a-col>
-        <a-col flex="auto" class="header-group">
+        <a-col flex="auto">
           Resistance
         </a-col>
       </a-row>
       <a-row class="header" type="flex" justify="space-between">
-        <a-col flex="50px" class="headerleftAlign">
+        <a-col flex="30px" class="headerleftAlign">
           Lvl
         </a-col>
-        <a-col flex="200px" class="leftAlign">
+        <a-col flex="150px" class="leftAlign">
           Name
         </a-col>
         <a-col flex="100px" class="leftAlign">
           Arcana
         </a-col>
-        <a-col flex="100px" class="leftAlign">
-          Trait
-        </a-col>
-        <a-col flex="60px">
+        <a-col flex="68px" class="tableBorderRightHead">
           Inherits
         </a-col>
-        <a-col flex="50px" v-for="(attr) in statAttributes" :key="'stat-' + attr">
+        <a-col flex="29px" v-for="(attr) in statAttributes" :key="'stat-' + attr">
           {{attr}}
         </a-col>
-        <a-col flex="50px" v-for="(attr) in elemAttributes" :key="'elem-' + attr.text" class="tooltip">
-          <div :class="attr.icon">
+        <a-col flex="50px" v-for="(attr, index) in elemAttributes" :key="'elem-' + attr.text"  :class="index == 0? 'tableBorderLeftHead tooltip' : 'tooltip'">
+          <div style="width: 100%" :class="attr.icon">
             <span class="tooltiptext">
               {{attr.text}}
             </span>
@@ -47,19 +44,16 @@
         </a-col>
       </a-row>
       <a-row class="row leftAlign" v-for="(item, index) in paginate(list)" :class="index % 2 === 0 ? 'darkRow' : 'alterRow'" :key="item.name" type="flex" justify="space-between">
-        <a-col flex="50px">
+        <a-col flex="30px" class="centerAlign">
           {{ item.level }}
         </a-col>
-        <a-col flex="200px">
+        <a-col flex="150px">
           {{ item.name }}
         </a-col>
         <a-col flex="100px">
           {{ item.arcana }}
         </a-col>
-        <a-col flex="100px">
-          {{ item.trait }}
-        </a-col>
-        <a-col flex="60px" class="centerAlign">
+        <a-col flex="68px" class="centerAlign tableBorderRight">
           <div :class="getAffinityIcon(item.inherits)" class="tooltip">
             <span class="tooltiptext">
               {{item.inherits}}
@@ -67,11 +61,11 @@
           </div>
         </a-col>
         
-        <a-col flex="50px" v-for="(stat) in item.stats" class="centerAlign">
+        <a-col flex="29px" v-for="(stat) in item.stats" class="centerAlign">
           {{ stat }}
         </a-col>
 
-        <a-col flex="50px" v-for="(elem) in item.elems" :class="getResistCss(elem)">
+        <a-col flex="50px" v-for="(elem, index) in item.elems" :class="index === 0 ? 'tableBorderLeft ' + getResistCss(elem) : getResistCss(elem)"> 
           {{ elem }}
         </a-col>
       </a-row>
@@ -107,9 +101,9 @@ export default {
       { text: "Gun", icon: "ico-elem-mini ico-elem-gun" },
       { text: "Fire", icon: "ico-elem-mini ico-elem-fire" },
       { text: "Ice", icon: "ico-elem-mini ico-elem-ice" }, 
-      { text: "Electricity", icon: "ico-elem-mini ico-elem-elec" },
+      { text: "Electric", icon: "ico-elem-mini ico-elem-elec" },
       { text: "Wind", icon: "ico-elem-mini ico-elem-wind" },
-      { text: "Psychokinesis", icon: "ico-elem-mini ico-elem-psy" }, 
+      { text: "Psy", icon: "ico-elem-mini ico-elem-psy" }, 
       { text: "Nuclear", icon: "ico-elem-mini ico-elem-nuke" },
       { text: "Bless", icon: "ico-elem-mini ico-elem-bless" }, 
       { text: "Curse", icon: "ico-elem-mini ico-elem-curse" }]
@@ -162,12 +156,26 @@ export default {
 };
 </script>
 <style scoped>
+.tableBorderRightHead {
+  border-right: 1px solid #000
+}
+.tableBorderLeftHead {
+  border-left: 1px solid #000
+}
+
+.tableBorderRight {
+  border-right: 1px solid #000
+}
+.tableBorderLeft {
+  border-left: 1px solid #000
+}
+
 .header-group {
   background-color: #e13026;
   color: white;
   font-weight: bold;
   margin: 1px;
-  border: 1px thin #fff;
+  border-right: 1px thin #fff;
 }
 .header {
   font-weight:bold;
@@ -201,7 +209,7 @@ export default {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 80px;
+  width: 60px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -214,13 +222,16 @@ export default {
   z-index: 1;
   bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -40px;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
+img.ico-elem-mini {
+  size: 25px 25px;
+}
 .ico-elem-mini {
   height: 25px;
   width: 25px;
@@ -239,53 +250,54 @@ export default {
   background-position: center;
 }
 .ico-elem-almighty {
-  background-image: url("/images/icons/almighty.png");
+  background-image: url("/persona5_vue2/images/icons/almighty.png");
 }
 .ico-elem-ailment {
-  background-image: url("/images/icons/ailment.png");
+  background-image: url("/persona5_vue2/images/icons/ailment.png");
 }
 .ico-elem-bless {
-  background-image: url("/images/icons/bless.png");
+  background-image: url("/persona5_vue2/images/icons/bless.png");
 }
 .ico-elem-curse {
-  background-image: url("/images/icons/curse.png");
+  background-image: url("/persona5_vue2/images/icons/curse.png");
 }
 .ico-elem-elec {
-  background-image: url("/images/icons/electric.png");
+  background-image: url("/persona5_vue2/images/icons/electric.png");
 }
 .ico-elem-fire {
-  background-image: url("/images/icons/fire.png");
+  background-image: url("/persona5_vue2/images/icons/fire.png");
 }
 .ico-elem-gun {
-  background-image: url("/images/icons/gun.png");
+  background-image: url("/persona5_vue2/images/icons/gun.png");
 }
 .ico-elem-healing {
-  background-image: url("/images/icons/healing.png");
+  background-image: url("/persona5_vue2/images/icons/healing.png");
 }
 .ico-elem-ice {
-  background-image: url("/images/icons/ice.png");
+  background-image: url("/persona5_vue2/images/icons/ice.png");
 }
 .ico-elem-nuke {
-  background-image: url("/images/icons/nuclear.png");
+  background-image: url("/persona5_vue2/images/icons/nuclear.png");
 }
 .ico-elem-passive {
-  background-image: url("/images/icons/passive.png");
+  background-image: url("/persona5_vue2/images/icons/passive.png");
 }
 .ico-elem-phys {
-  background-image: url("/images/icons/phys.png");
+  background-image: url("/persona5_vue2/images/icons/phys.png");
 }
 .ico-elem-psy {
-  background-image: url("/images/icons/psy.png");
+  background-image: url("/persona5_vue2/images/icons/psy.png");
 }
 .ico-elem-support {
-  background-image: url("/images/icons/support.png");
+  background-image: url("/persona5_vue2/images/icons/support.png");
 }
 .ico-elem-wind {
-  background-image: url("/images/icons/wind.png");
+  background-image: url("/persona5_vue2/images/icons/wind.png");
 }
 
 .resist {
   font-weight: bold;
+  text-align: center;
 }
 .resist-wk {
   color: red;
