@@ -8,64 +8,72 @@
     </a-space>
     <br /><br />
     <div class="content">
-      <a-row type="flex" class="header-group">
-        <a-col flex="434px" class="tableBorderRightHead">
+      <a-row class="header-group">
+        <a-col :span="9" class="tableBorderRightHead">
           Persona
         </a-col>
-        <a-col flex="187px" class="tableBorderRightHead">
+        <a-col :span="5" class="tableBorderRightHead">
           Stats
         </a-col>
-        <a-col flex="auto">
+        <a-col :span="10">
           Resistance
         </a-col>
       </a-row>
       <a-row class="header" type="flex" justify="space-between">
-        <a-col flex="30px" class="headerleftAlign">
-          Lvl
+        <a-col :span="1" class="headerleftAlign">
+          <a v-on:click="sortList('level')">Lvl</a>
         </a-col>
-        <a-col flex="150px" class="leftAlign">
-          Name
+        <a-col :span="3" class="leftAlign">
+          <a v-on:click="sortList('name')">Name</a>
         </a-col>
-        <a-col flex="100px" class="leftAlign">
-          Arcana
+        <a-col :span="2" class="leftAlign">
+          <a v-on:click="sortList('arcana')">Arcana</a>
         </a-col>
-        <a-col flex="68px" class="tableBorderRightHead">
-          Inherits
+        <a-col :span="2" class="leftAlign">
+          <a v-on:click="sortList('trait')">Trait</a>
         </a-col>
-        <a-col flex="29px" v-for="(attr) in statAttributes" :key="'stat-' + attr">
-          {{attr}}
+        <a-col :span="1" class="leftAlign tableBorderRightHead">
+          <a v-on:click="sortList('inherits')">Inherits</a>
         </a-col>
-        <a-col flex="50px" v-for="(attr, index) in elemAttributes" :key="'elem-' + attr.text"  :class="index == 0? 'tableBorderLeftHead tooltip' : 'tooltip'">
-          <div style="width: 100%" :class="attr.icon">
-            <span class="tooltiptext">
-              {{attr.text}}
-            </span>
-          </div>
+        <a-col :span="1" v-for="(attr, index) in statAttributes" :key="'stat-' + attr">
+          <a v-on:click="sortListByStat(index)">{{attr}}</a>
+        </a-col>
+        <a-col :span="1" v-for="(attr, index) in elemAttributes" :key="'elem-' + attr.text"  :class="index == 0? 'tableBorderLeftHead tooltip' : 'tooltip'">
+          <a  v-on:click="sortListByElem(index)">
+            <div style="width: 100%" :class="attr.icon">
+              <span class="tooltiptext">
+                {{attr.text}}
+              </span>
+            </div>
+          </a>
         </a-col>
       </a-row>
       <a-row class="row leftAlign" v-for="(item, index) in paginate(list)" :class="index % 2 === 0 ? 'darkRow' : 'alterRow'" :key="item.name" type="flex" justify="space-between">
-        <a-col flex="30px" class="centerAlign">
+        <a-col :span="1" class="centerAlign">
           {{ item.level }}
         </a-col>
-        <a-col flex="150px">
+        <a-col :span="3">
           {{ item.name }}
         </a-col>
-        <a-col flex="100px">
+        <a-col :span="2">
           {{ item.arcana }}
         </a-col>
-        <a-col flex="68px" class="centerAlign tableBorderRight">
-          <div :class="getAffinityIcon(item.inherits)" class="tooltip">
+        <a-col :span="2">
+          {{ item.trait }}
+        </a-col>
+        <a-col :span="1" class="centerAlign tableBorderRight">
+          <div :class="'tooltip ' + getAffinityIcon(item.inherits)" style="width: 100%">
             <span class="tooltiptext">
               {{item.inherits}}
             </span>
           </div>
         </a-col>
         
-        <a-col flex="29px" v-for="(stat) in item.stats" class="centerAlign">
+        <a-col :span="1" v-for="(stat) in item.stats" class="centerAlign">
           {{ stat }}
         </a-col>
 
-        <a-col flex="50px" v-for="(elem, index) in item.elems" :class="index === 0 ? 'tableBorderLeft ' + getResistCss(elem) : getResistCss(elem)"> 
+        <a-col :span="1" v-for="(elem, index) in item.elems" :class="index === 0 ? 'tableBorderLeft ' + getResistCss(elem) : getResistCss(elem)"> 
           {{ elem }}
         </a-col>
       </a-row>
@@ -74,7 +82,7 @@
         show-size-changer
         :defaultPageSize="this.pageSize"
         :pageSizeOptions="['10', '25', '50', '100']"
-        :total="this.list.length" @change="onPageChange" 
+        :total="this.staticList.length" @change="onPageChange" 
         @showSizeChange="onShowSizeChange"/>
 
 
@@ -88,11 +96,12 @@ import getPersonaAsList from '../utils/TransformUtils.js';
 
 export default {
   data: () => ({
+    sortOrder: 'asc',
     filterText: '',
     currentPage: 1,
     pageSize: 50,
-    list: getPersonaAsList(persona5DataRoyal),
-
+    staticList: getPersonaAsList(persona5DataRoyal),
+    list: [],
     headerAttributes: [ "lvl", "persona", "arcana", "inherits", "stats", "elems"],
     personaAttributes: [ "level", "persona", "inherits", "item", "rare item",
       "arcana", "trait", "elems", "stats", "skills"],
@@ -103,12 +112,13 @@ export default {
       { text: "Ice", icon: "ico-elem-mini ico-elem-ice" }, 
       { text: "Electric", icon: "ico-elem-mini ico-elem-elec" },
       { text: "Wind", icon: "ico-elem-mini ico-elem-wind" },
-      { text: "Psy", icon: "ico-elem-mini ico-elem-psy" }, 
+      { text: "Psycokinesis", icon: "ico-elem-mini ico-elem-psy" }, 
       { text: "Nuclear", icon: "ico-elem-mini ico-elem-nuke" },
       { text: "Bless", icon: "ico-elem-mini ico-elem-bless" }, 
       { text: "Curse", icon: "ico-elem-mini ico-elem-curse" }]
   }),
   mounted() {
+    this.list = this.staticList;
     this.paginate(this.list);
   },
   methods: {
@@ -131,6 +141,57 @@ export default {
     paginate(array) {
       return array.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize);
     },
+    sortList(fieldName) {
+      this.list.sort((a, b) => {
+        var item1, item2;
+        if (this.sortOrder === 'asc') {
+          item1 = a[fieldName];
+          item2 = b[fieldName];
+        } else {
+          item1 = b[fieldName];
+          item2 = a[fieldName];
+        }
+        if (item1 < item2) {
+          return -1;
+        } else if (item1 > item2) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+    },
+    sortListByElem(elemIndex) {
+      this.list.sort((a, b) => {
+        var item1; 
+        var item2;
+        if (this.sortOrder === 'asc') {
+          item1 = a.elems[elemIndex];
+          item2 = b.elems[elemIndex];
+        } else  {
+          item1 = b.elems[elemIndex];
+          item2 = a.elems[elemIndex];
+        }
+        if (item1 < item2) {
+          return -1;
+        } else if (item1 > item2) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+    },
+    sortListByStat(elemIndex) {
+      this.list.sort((a, b) => {
+        if (this.sortOrder === 'asc') {
+          return a.stats[elemIndex] - b.stats[elemIndex];
+        } else {
+          return b.stats[elemIndex] - a.stats[elemIndex];
+        }
+      });
+      this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+    },
     filter(text) {
       text = text.toLowerCase();
       var filteredResult = this.filterByFields(text);
@@ -145,17 +206,24 @@ export default {
       });
     },
     onSearch(event) {
-      this.list = getPersonaAsList(persona5DataRoyal);
+      this.list = this.staticList;
       this.filter(this.filterText);
     },
     onClear(event) {
       this.filterText = "";
-      this.list = getPersonaAsList(persona5DataRoyal);
+      this.list = this.staticList;
     }
   },
 };
 </script>
 <style scoped>
+a {
+  color: #000;
+  text-decoration: underline;
+}
+a:hover {
+  color: #FFC857;
+}
 .tableBorderRightHead {
   border-right: 1px solid #000
 }
@@ -242,8 +310,9 @@ img.ico-elem-mini {
 }
 
 .ico-elem {
-  height: 23px;
-  width: 60px;
+  height: 11px;
+  width: 30px;
+  background-size: 30px 11px;
   background-repeat: no-repeat;
   background-color: transparent;
   margin: 2px 2px 2px 2px;
