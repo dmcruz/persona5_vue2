@@ -82,7 +82,7 @@
         show-size-changer
         :defaultPageSize="this.pageSize"
         :pageSizeOptions="['10', '25', '50', '100']"
-        :total="this.staticList.length" @change="onPageChange" 
+        :total="this.totalRecords" @change="onPageChange" 
         @showSizeChange="onShowSizeChange"/>
 
 

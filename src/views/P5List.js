@@ -7,6 +7,7 @@ export default {
     filterText: '',
     currentPage: 1,
     pageSize: 50,
+    totalRecords: 232,
     staticList: getPersonaAsList(persona5DataRoyal),
     list: [],
     headerAttributes: [ "lvl", "persona", "arcana", "inherits", "stats", "elems"],
@@ -26,6 +27,7 @@ export default {
   }),
   mounted() {
     this.list = this.staticList;
+    this.totalRecords = this.staticList.length;
     this.paginate(this.list);
   },
   methods: {
@@ -100,9 +102,11 @@ export default {
       this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
     },
     filter(text) {
+      this.currentPage = 1;
       text = text.toLowerCase();
       var filteredResult = this.filterByFields(text);
       this.list = this.paginate(filteredResult);
+      this.totalRecords = filteredResult.length;
     },
     filterByFields(text) {
       return this.list.filter(function(item){
@@ -119,6 +123,8 @@ export default {
     onClear(event) {
       this.filterText = "";
       this.list = this.staticList;
+      this.currentPage = 1;
+      this.totalRecords = this.list.length;
     }
   },
 };
