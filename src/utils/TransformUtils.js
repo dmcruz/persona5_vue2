@@ -24,4 +24,4 @@ const getPersonaAsList = (persona5DataRoyal) => {
   return data[name];
 }
 
-export default getPersonaAsList;
+export { getPersonaAsList, getPersonaDetail };

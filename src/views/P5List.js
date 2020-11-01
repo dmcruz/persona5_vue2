@@ -1,5 +1,7 @@
 import persona5DataRoyal from '../data/PersonaDataRoyal.js';
-import getPersonaAsList from '../utils/TransformUtils.js';
+import router from '../router/index.js';
+import store from '../store/index.js';
+import { getPersonaAsList } from '../utils/TransformUtils.js';
 
 export default {
   data: () => ({
@@ -7,7 +9,7 @@ export default {
     filterText: '',
     currentPage: 1,
     pageSize: 50,
-    totalRecords: 232,
+    totalRecords: 0,
     staticList: getPersonaAsList(persona5DataRoyal),
     list: [],
     headerAttributes: [ "lvl", "persona", "arcana", "inherits", "stats", "elems"],
@@ -125,6 +127,10 @@ export default {
       this.list = this.staticList;
       this.currentPage = 1;
       this.totalRecords = this.list.length;
+    },
+    goToPersona(persona) {
+      store.dispatch('selectPersona', persona);
+      router.push({ path: `/persona/${persona.name}`});
     }
   },
 };

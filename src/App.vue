@@ -25,7 +25,7 @@ body {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #e13026;
   font-size: 20pt;
   text-transform:uppercase;
 }

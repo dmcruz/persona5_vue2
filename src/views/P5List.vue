@@ -53,7 +53,9 @@
           {{ item.level }}
         </a-col>
         <a-col :span="3">
-          {{ item.name }}
+          <router-link :to="'/persona/' + item.name">
+            <a v-on:click="goToPersona(item)" class="linkBody">{{ item.name }}</a>
+          </router-link>
         </a-col>
         <a-col :span="2">
           {{ item.arcana }}

@@ -2,9 +2,14 @@ a {
   color: #000;
   text-decoration: underline;
 }
-a:hover {
+a:hover, a:hover > .linkBody {
   color: #FFC857;
 }
+.linkBody {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .tableBorderRightHead {
   border-right: 1px solid #000
 }
