@@ -1,3 +1,5 @@
+
+
 const getPersonaAsList = (persona5DataRoyal) => {
   var list = [];
   for(var name in persona5DataRoyal) {
@@ -24,4 +26,7 @@ const getPersonaAsList = (persona5DataRoyal) => {
   return data[name];
 }
 
-export { getPersonaAsList, getPersonaDetail };
+const getPersonaLore = (myths, persona) => {
+  return myths.filter( (myth) => myth.name == persona);
+}
+export { getPersonaAsList, getPersonaDetail, getPersonaLore };

@@ -2,7 +2,7 @@
   <div class="home">
     
     <a-space>
-    <a-input v-model.lazy="filterText"/>
+    <a-input v-model.lazy="filterText" v-on:keyup.enter="onSearch"/>
     <a-button type="primary" v-on:click="onSearch">Filter</a-button>
     <a-button type="secondary" v-on:click="onClear">Clear</a-button>
     </a-space>

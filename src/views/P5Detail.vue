@@ -1,16 +1,40 @@
 <template>
 <div>
   <a-row type="flex" justify="center">
-    <a-col :span="2" class="header">
-      name
+    <a-col :span="1">
+
+      <a-button type="primary" v-on:click="onClickPrevious" class="hide">
+        <a-icon type="left" />Previous
+      </a-button>
+
     </a-col>
     <a-col :span="6">
-      {{persona.name}}
+
+      <h2>{{name}}</h2>
+
+    </a-col>
+    <a-col :span="1">
+      <a-button type="primary" v-on:click="onClickNext" class="hide">
+        Next<a-icon type="right" />
+      </a-button>
     </a-col>
   </a-row>
+
+  <div style="width: 35%; margin: auto; text-align: justify; white-space: pre-line;">
+    <i>
+      {{ getHistory()}}
+    </i>
+
+    <br /><br />
+    Origins: 
+    <li v-for="(item) in getOrigins()">{{ item }}</li>
+  </div>
+  
+  <br /><br />
+
   <a-row type="flex" justify="center">
     <a-col :span="2" class="header">
-      level
+      starting level
     </a-col>
     <a-col :span="6">
       {{persona.level}}
@@ -75,7 +99,7 @@
 
 
   <a-row type="flex" justify="center">
-    <a-col :span="8" class="header">Stats</a-col>
+    <a-col :span="8" class="header">Base Stats</a-col>
   </a-row>
   <a-row type="flex" justify="center" v-for="(stat, index) in persona.stats">
     <a-col :span="6" class="header-sub">
@@ -102,11 +126,17 @@
 
 </div>
 </template>
+
 <script>
+import myths from '../data/Mythology.js';
+import { getPersonaLore } from '../utils/TransformUtils.js';
+
 export default {
   props: ['name'],
   data: () => ({
+    myths: myths,
     persona: null,
+    lore: null,
     statAttributes: ["Strength", "Magic", "Endurance", "Agility", "Luck"],
     elemAttributes: [{ text: "Physical", icon: "ico-elem-mini ico-elem-phys"},
       { text: "Gun", icon: "ico-elem-mini ico-elem-gun" },
@@ -119,10 +149,32 @@ export default {
       { text: "Bless", icon: "ico-elem-mini ico-elem-bless" }, 
       { text: "Curse", icon: "ico-elem-mini ico-elem-curse" }]
   }),
-  beforeMount() {
+  beforeMount() {4
     this.persona = this.getPersonaDetails();
+    this.lore = this.getLore();
   },
   methods: {
+    getLore() {
+      if (this.name) {
+        const lore = getPersonaLore(myths, this.name)
+        if (lore && lore[0]) {
+          return lore[0];
+        }
+      }
+      return null;
+    },
+    getHistory() {
+      if (this.lore && this.lore.history) {
+        return this.lore.history;
+      }
+      return 'The historian is working on it...';
+    },
+    getOrigins() {
+      if (this.lore && this.lore.origins) {
+        return this.lore.origins;
+      }
+      return [];
+    },
     getAffinityIcon(affinity) {
       return `ico-elem ico-elem-${affinity}`;
     },
@@ -144,6 +196,12 @@ export default {
         default:
           return resist;
       }
+    },
+    onClickPrevious(event) {
+
+    },
+    onClickNext(event) {
+
     }
   }
 }
@@ -151,8 +209,15 @@ export default {
 <style scoped src="./P5List.css">
 </style>
 <style scoped>
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
 .header-sub {
   background-color: #333;
   margin: 0.5px;
+}
+.hide {
+  visibility: hidden;
 }
 </style>
