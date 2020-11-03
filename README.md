@@ -7,6 +7,11 @@ https://github.com/chinhodado/persona5_calculator
 
 # persona5_vue2
 
+## App running at:
+```
+http://localhost:8080/persona5_vue2/ 
+```
+
 ## Project setup
 ```
 yarn install

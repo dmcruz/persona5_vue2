@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Persona 5 Royal Compedium</router-link>
+      <router-link to="/">Persona 5 Royal Compendium</router-link>
     </div>
     <router-view/>
   </div>

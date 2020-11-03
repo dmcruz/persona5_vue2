@@ -71,11 +71,11 @@
           </div>
         </a-col>
         
-        <a-col :span="1" v-for="(stat) in item.stats" class="centerAlign">
+        <a-col :span="1" v-for="(stat, index) in item.stats" class="centerAlign" :key="index">
           {{ stat }}
         </a-col>
 
-        <a-col :span="1" v-for="(elem, index) in item.elems" :class="index === 0 ? 'tableBorderLeft ' + getResistCss(elem) : getResistCss(elem)"> 
+        <a-col :span="1" v-for="(elem, index) in item.elems" :key="index" :class="index === 0 ? 'tableBorderLeft ' + getResistCss(elem) : getResistCss(elem)"> 
           {{ elem }}
         </a-col>
       </a-row>

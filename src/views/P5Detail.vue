@@ -86,7 +86,7 @@
   <a-row type="flex" justify="center">
     <a-col :span="8" class="header">Skills</a-col>
   </a-row>
-  <a-row type="flex" justify="center" v-for="(skill, name, index) in persona.skills">
+  <a-row type="flex" justify="center" v-for="(skill, name, index) in persona.skills" v-bind:key="name">
     <a-col :span="6" class="header-sub">
         {{name}}
     </a-col>
@@ -101,7 +101,7 @@
   <a-row type="flex" justify="center">
     <a-col :span="8" class="header">Base Stats</a-col>
   </a-row>
-  <a-row type="flex" justify="center" v-for="(stat, index) in persona.stats">
+  <a-row type="flex" justify="center" v-for="(stat, index) in persona.stats" v-bind:key="statAttributes[index]">
     <a-col :span="6" class="header-sub">
         {{statAttributes[index]}}
     </a-col>
@@ -115,7 +115,7 @@
   <a-row type="flex" justify="center">
     <a-col :span="8" class="header">Elemental Resistance</a-col>
   </a-row>
-  <a-row type="flex" justify="center" v-for="(elem, index) in persona.elems">
+  <a-row type="flex" justify="center" v-for="(elem, index) in persona.elems" v-bind:key="elemAttributes[index].text">
     <a-col :span="6" class="header-sub">
         {{elemAttributes[index].text}}
     </a-col>
@@ -149,7 +149,7 @@ export default {
       { text: "Bless", icon: "ico-elem-mini ico-elem-bless" }, 
       { text: "Curse", icon: "ico-elem-mini ico-elem-curse" }]
   }),
-  beforeMount() {4
+  beforeMount() {
     this.persona = this.getPersonaDetails();
     this.lore = this.getLore();
   },

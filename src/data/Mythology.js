@@ -1,7 +1,7 @@
 // source: https://megamitensei.fandom.com/
 const myths = [
   {
-    name: 'Abbadon',
+    name: 'Abaddon',
     history: 'The Hebrew term "Abaddon", and its Greek equivalent "Apollyon" appear in the Bible as both a place of destruction and an archangel of the abyss. In the Hebrew Bible, abaddon is used with reference to a bottomless pit, often appearing alongside the place שְׁאוֹל, meaning the realm of the dead.',
     origins: ['Abrahamic']
   },
@@ -831,193 +831,311 @@ const myths = [
   },
   {
     name: 'Metatron',
-    history: ``,
+    history: `Metatron (who is sometimes theorized to originally be Enoch, father of Methuselah and great-grandfather of Noah) is the voice of God. Whenever a human believes God has directly spoken to them, in reality it is Metatron acting as his vessel. One million eyes and mouths cover his body, and every mouth speaks a different language. He is the being who is the nearest in hierarchy to that of God. He is said to have the largest body among all of the angels, having 36 wings, 3 representing the triumvirate of the father (God), the son (Jesus Christ) and the holy ghost, multiplied by the 12 tribes of Israel (God's chosen people). In ancient Judaism, his status is even higher than that of the Archangel Michael (who the ancients believed to be Adam, the first man aka the Ancient of Days). He received various titles such as "Face of God," "Angel of Contracts" synonymous with the Iranian God Mithra, "King of Angels" and others of the like. His name literally means "He who sits behind the throne of Heaven." Metatron is also said to be the twin brother of the archangel Sandalphon.
+
+    Although Metatron isn't an official angel according to the ecumenical teachings of modern Christendom (nor does he appear in any of the Old or New Testament books and letters of the Bible), his celebrity is certainly not without consequence. As put forth in several of the ancient Enochian texts (especially the Slavonic Secrets of Enoch text 2, one of many deuterocanonicals attributed to Enoch), Metatron takes on the heavenly role as God's mediator with all mankind. Some of said texts even go so far as to assert that Metatron is actually the holy ghost of Christianity (see 2 Enoch and 3 Enoch). As such, particularly to the Gnostics in upper Mesopotamia via the "Nag Hammadi" transcripts, Metatron is portrayed to be the most mysterious, as well as the highest, in the order of the heavenly host.`,
     origins: ['Abrahamic']
   },
   {
     name: 'Michael',
-    history: ``,
-    origins: []
+    history: `Michael, also known as Mikail in Islam, is an Archangel, one of the principal 50 angels in Christian lore, and of the four archangels of Islamic tradition.
+
+    In Christianity, he is viewed as the field commander of the Army of God and led it in the war against the Devil and the fallen angels. He is also a saint and thus carries the title "St. Michael The Archangel." He is mentioned by name in the Book of Daniel and the Book of Revelations. In the book of Daniel, Michael appears as "one of the chief princes" who in Daniel's vision comes to the angel Gabriel's aid in their contest with the angel of Persia, and is also described there as the advocate of Israel and "great prince who stands up for the children of your people." Michael's status in the army of Heaven is seen as a Viceroy or an Archistrage as well, but he's mostly seen as the commander of Heaven's army.
+    
+    In Hebrew, Michael means "who is like God", "Who is like God?" However, it does not mean that one should confuse him with being like God, instead it implies that no one is like God. In this way, Michael is reinterpreted as a symbol of humility before God.
+    
+    In Islam, Michael serves as one who delivered bounty and sustenance to all living things as commanded by God.`,
+    origins: ['Abrahamic']
   },
   {
     name: 'Mishaguji',
-    history: ``,
-    origins: []
+    history: `Mishaguji was a native god worshiped in the ancient Shinto region of Japan before the Yamato took control, at which point the worship of it became a taboo. Mishaguji was the god of sexual intercourse and if he was left an offering, then sex would become better. It is said that Mishaguji's incarnation on Earth had a very phallic shape, possibly similar to an earthworm, and he would take shelter under rocks or stones. Once Yamato took control however, Mishaguji became seen as a god that only the undesirable and unfaithful would worship.`,
+    origins: ['Japanese']
   },
   {
     name: 'Mithra',
-    history: ``,
-    origins: []
+    history: `In Zoroastrian mythology, Mithra was a deity of contracts who was the protector of truth and the enemy of error. He was created by the supreme deity Ahura Mazda as the greatest of all Yazatas and an important aid in the destruction of the demonic forces led by Angra Mainyu (also known as Ahriman) in later Persian sources. He was one of the three Yazatas alongside Rashnu and Sraosha who judged the souls of the dead.
+
+    In Vedic mythology, Mitra is a god of honesty, friendship, meetings and contracts despite his role as an asura (although he is sometimes addressed as a deva). In this way, he was often paired with the asura Varuna where they were twinned as Mitra-Varuna. Together they were the gods of the oath and the most important Asura in the Vedic pantheon. Mitra was also another name for Surya.
+    
+    He is not to be confused with Mithras of Roman origin.`,
+    origins: ['Zoroastrian', 'Persian', 'Vedic']
   },
   {
     name: 'Mithras',
-    history: ``,
-    origins: []
+    history: `Mithras is a sun deity who was worshiped in the Roman empire from the 1st to the 4th century AD and is the patron of Mithraism. He was said to be reborn after death, and a festival was held on the winter solstice for him.
+
+    Mithraism was a religion and cult worshiping the god that also originated from the Roman Empire from about the 1st to the 4th century. It is believed that the cult was popular in the Roman military and did not accept female disciples. Whether the god was directly inspired by the much older Mithra from Persia remains debatable. It is today considered a mystery religion due to lack of textual records of the cult, but many Mithraic temples and artifacts survive.
+    
+    He is said to be appear as a being born from a rock as an adult and holding a knife which would be used for bull-slaughtering, a ritual believed to be commonly practiced by the disciples in honor of the god.
+    
+    He has sometimes been confused with the Zoroastrian/Vedic deity Mithra.`,
+    origins: ['Greco-Roman']
   },
   {
     name: 'Mokoi',
-    history: ``,
-    origins: []
+    history: `In Australian folklore, Mokoi are spirits of evil who kill those who used dark magic. They would also kidnap and eat children at night.`,
+    origins: ['Australian']
   },
   {
     name: 'Moloch',
-    history: ``,
-    origins: []
+    history: `Moloch refers to either a god or a particular kind of sacrifice associated with fire. He was a demonic fertility deity, turned false deity, mentioned in varied theological writings; the most famous of which would be the Christian Bible. He appears, and is mentioned, in the Old Testament as a god that Moses forbade the Israelites to worship.
+
+    Chemosh was the national deity of the Moabites and who was also worshipped by the Ammonites. He was called by the ancient Israelites as "the abomination of Moab." The fallen angel Belphegor was often connected to this deity.`,
+    origins: ['Abrahamic', 'Canaanite', 'Semitic']
   },
   {
     name: 'Mot',
-    history: ``,
-    origins: []
+    history: `Mot. also known as Mavet, is the Canaanite and Semitic god of death, infertility, drought and the Underworld who lives in the throne city which goes by the name Hemry, a pit is his throne, and Filth is the land of his heritage. He was worshipped by the people of Ugarit, by the Phoenicians, and also by the Hebrews of the Old Testament. In Ugaritic myth, Mot is a personification of Death.
+
+    He is one of the sons of the high god El, he was the chief antagonist of the rain god Baal Hadad, whose life-giving waters brought fertility to the land. Mot was the Lord of the desert dryness, the underworld, and all that is opposed to life.
+    
+    According the Baal Cycle, Mot was called the "Darling of El" and was one of the primary actors in the annual fertility cycle. In this drama, Baal had defeated Ym and established his throne on Mount Saphon. A struggle then ensued, in which Baal and Mot battled for supremacy. Mot would continuously attempt to devour the Baal every few years. This exchange continued for a time until Mot's own father threatened to overturn his throne if the conflict did not end.
+    `,
+    origins: ['Canaanite', 'Semitic']
   },
   {
     name: 'Mother Harlot',
-    history: ``,
-    origins: []
+    history: `Within the Book of Revelation, Mother Harlot is known as "Babylon the Great, Mother of Prostitutes and Abominations of the Earth," "Whore of Babylon", or The Harlot for short.
+
+    She appears as wearing a purple robe. The color purple was associated with the Roman Empire, as well as the garments of the Roman Catholic clergy, and the Harlot and her beast can be seen as an allegory of the Roman Catholic Church and the Roman Empire respectively. The beast she rides has seven heads and Rome has seven hills, so the heads could reflect the ancient power of Rome, which traditionally was one of antiquity's most powerful empires. Alternatively, the heads of the beast could represent the seven great kingdoms of the ancient world and their rulers.
+    
+    One interpretation is that the seven heads represent the seven different forms of Roman governance: kings, consuls, decemviri (council of 10), dictators, triumviri (council of 3), caesars (military emperors) and despotic emperors. The Harlot is seen riding on the seven-headed beast as she represents the apostate church, The Roman Catholic Church, which rose to prominence on the back of the power of the Roman Empire. `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Mothman',
-    history: ``,
-    origins: []
+    history: `Mothman is a cryptid of American origin. In the mid-1960s, there were some sightings of a great winged creature with massive reddish eyes. It is thought (outside of cryptozoology) that these might actually be misconstrued sandhill cranes or barn owls.`,
+    origins: ['American', 'Pop-culture']
   },
   {
     name: 'Naga',
-    history: ``,
-    origins: []
+    history: `The naga are divine, semi-divine deities or a semi-divine race of half-human half-serpent beings that reside in the underworld (Patala) and can occasionally take human form. They are principally depicted in three forms: wholly human with snakes on the heads and necks, common serpents or as half-human half-snake beings. A female naga is a "nagi," "nagin" or "nagini," and are said to be both beautiful and clever. Nagaraja is seen as the king of nagas. They are common and hold cultural significance in the mythological traditions of many South Asian and Southeast Asian cultures.
+
+    The nagas possess many of the world's finest jewels, which they use to illuminate the underground palaces in which they dwell. Because of their defensive powers, statues of nagas are often placed at the entrances of temples. In some depictions, they live in the bottoms of lakes and seas and enjoy singing and dancing when they are not fighting.
+    
+    In Buddhism and Jainism, a naga is a half-snake and half-human hybrid that resides in tribes. They are said to be the enemies of Garuda. They are also said to be the followers of Koumokuten, one of the Four Heavenly Kings. In Hinduism, they are usually depicted as human from the waist up and snake from the waist down. They are regarded as gods of the harvest, fertility and reincarnation. Their venom can kill with one strike, and their bodies are immortal and can heal from any wound.`,
+    origins: ['Hindu', 'Buddhist']
   },
   {
     name: 'Narcissus',
-    history: ``,
-    origins: []
+    history: `Narcissus (Greek: Νάρκισσος) was a strong and beautiful boy of Greek mythology. He is also known for his cruel disposition; he rejected the love of the youths, boy and girl, who adored him. His final act of rejection led to him being cursed by the deity of retribution, Nemesis. He fell in love with his own reflection in the water, which inadvertently led to his death. Accounts vary on the circumstances that brought Narcissus to his watery death, and even the cause of his death differs; he either drowned himself trying to embrace the image, starved to death or killed himself for being unable to accept this love. Either way, a flower grew from the spot he died, which was named the "narcissus."`,
+    origins: ['Greco-Roman']
   },
   {
     name: 'Nebiros',
-    history: ``,
-    origins: []
+    history: `Nebiros was first mentioned by Johann Wier in 1583 as Naberius. He is supposedly the most valiant Marquis of Hell, has nineteen legions of demons under his command. He makes men cunning in all arts (and sciences, according to most authors), but especially in rhetoric, speaking with a hoarse voice. He also restores lost dignities and honors, although according to Johann Wier he procures the loss of them.
+
+    The 24th spirit of the Goetia, Naberius appears as a three-headed dog or a raven. He has a raucous voice but presents himself as eloquent and amiable. He teaches the art of gracious living. He is depicted as a crow or black crane.
+    
+    Concerning his name, it is unclear if there is an association with the Greek Cerberus. It is said that in 1583, Johann Weyer considers both of them to be the same demon. He claimed:
+    
+    "Naberius [Naberus], alias Cerberus, is a valiant marquesse, shewing himselfe in the forme of a crowe, when he speaketh with a hoarse voice: he maketh a man amiable and cunning in all arts, and speciallie in rhetorike, he procureth the losse of prelacies and dignities: nineteene legions heare (and obeie) him."﻿
+    
+    The Grand Grimoire regards Nebiros as the Field Marshal and Inspector General of the armies of Hell. He can be conjured to inflict woes upon anyone, discover the Hand of Glory, teach the mystic and occult qualities of all animals, plants and minerals and supply necromantic advice. One of the three Goetic nobles under his direct authority is Naberius, suggesting that the Grand Grimoires author understood the two spellings to signify distinct demons. The other two subordinates are Glasya-Labolas and Ayperos.`,
+    origins: ['Ars Goetia', 'Abrahamic']
   },
   {
     name: 'Neko Shogun',
-    history: ``,
-    origins: []
+    history: `Neko Shogun is a divine general in the image of a cat. Originally, he was a Chinese general who conquered Vietnam: Mao Shangshu (毛尚書). The people decided to dedicate a temple to him and worship him as god. However, due to the name Mao (毛) sounding very similar to the Chinese word for cat (猫), the temple was accidentally misnamed. Thus, the Temple of General Mao became known as Temple of General Cat (猫将军).
+    `,
+    origins: ['Chinese']
   },
   {
     name: 'Nekomata',
-    history: ``,
-    origins: []
+    history: `In Japanese folklore, a nekomata, also known as a bakeneko, is a type of Yokai that appears as a cat with supernatural abilities akin to those of the fox or raccoon dog. A cat may become a bakeneko in a number of ways: it may reach a certain age, be kept for a certain number of years, grow to a certain size, or be allowed to keep a long tail. In the last case, the tail forks in two and the bakeneko is then called a nekomata. This superstition may have some connection to the breeding of the Japanese Bobtail.`,
+    origins: ['Japanese']
   },
   {
     name: 'Nigi Mitama',
-    history: ``,
-    origins: []
+    history: `In Japanese belief, it is the calm and functional state of a person's soul, or kami, which is considered to be the opposite of Ara Mitama. The Ara Mitama must first be pacified with rites and worship before the Nigi Mitama will appear.`,
+    origins: ['Japanese']
   },
   {
     name: 'Norn',
-    history: ``,
-    origins: []
+    history: `Derived from Norse mythology, Norn, also known as Nornir, refers to the numerous female beings who rule the fates of the various races that exist, the three most important being Urd, Verdandi and Skuld. They are said to live near a lake under the roots of Yggdrasil, the world tree.`,
+    origins: ['Norse']
   },
   {
     name: 'Nue',
-    history: ``,
-    origins: []
+    history: `A legendary monster in Japanese mythology. Nue has the head of a monkey, the arms and legs of a tiger, body of a raccoon dog and a snake for a tail.
+
+    According to The Tale of the Heike, Emperor Konoe, the Emperor of Japan, became sick after having terrible nightmares every night, and a dark cloud appeared at two o'clock in the morning on roof of the palace in Kyoto during the summer of 1153. The story says that the samurai Minamoto no Yorimasa staked-out the roof one night and fired an arrow into the cloud, out of which fell a dead Nue. Yorimasu then supposedly sank the body in the Sea of Japan.
+    
+    In a local expansion of the story, the Nue's corpse floated into a certain bay, and the locals, fearing a curse, buried it. A mound which exists today is supposed to be this grave.`,
+    origins: ['Japanese']
   },
   {
     name: 'Obariyon',
-    history: ``,
-    origins: []
+    history: `The Obariyon is a Japanese "piggyback demon" from local folklore. While a person is walking along a woodland or grassy path, the Obariyon may jump out and attach itself to their back. While it cannot be seen, its weight can be felt by the person, and it becomes harder to walk. The Obariyon cannot be easily removed without the use of magic, but it is said if you can remove it and take it home, it will turn into many valuable gold coins.`,
+    origins: ['Japanese']
   },
   {
     name: 'Oberon',
-    history: ``,
-    origins: []
+    history: `Oberon is the King of the Fairies and the husband of Titania, the Fairy Queen. He rules over moonlight, dreams, and all fairy rites. He first became widely known when he appeared as a character in Shakespeare’s "A Midsummer Night’s Dream," but appeared earlier in the 13th century French epic "Huon of Bordeaux." In some stories, specifically in "Huon of Bordeaux," it is said that he is the son of Morgan le Fey and Julius Caesar, believed to have been born some time after Caesar’s defeat of Pompey.
+
+    Although he has the face of a handsome young man, a curse has made him no taller than a young child that he received shortly after birth. However, the curse gives him eternal beauty. He is polite and sometimes even friendly towards humans, however he can be a selfish, short-tempered ruler, often falling in love and flirting with human women, only to be restrained by his consort Titania. The two are said to have once lived in India, and they would cross the sea to Europe at night to dance in the moonlight.
+    `,
+    origins: ['English', 'Modern Fiction', 'European']
   },
   {
     name: 'Odin',
-    history: ``,
-    origins: []
+    history: `Odin (Old Norse: Óðinn), meaning The Furious, is considered the chief god (known as an All-Father) in Norse mythology. He is associated with wisdom, war, frenzy, knowledge, battle and death and also magic, sorcery, poetry, the gallows, healing, royalty, prophecy, victory and the hunt, and is the husband of the goddess Frigg.
+
+    Odin is often portrayed as being an eminently honorable ruler and battlefield commander, but to the ancient Norse, he was nothing of the sort. In contrast to more straightforwardly noble war gods such as Tyr or Thor, Odin incites otherwise peaceful people to strife with what is a downright sinister glee. He maintains particularly close affiliations with the berserkers and other “warrior-shamans” whose fighting techniques and associated spiritual practices center around achieving a state of ecstatic unification with certain ferocious totem animals. He is also known by hundreds of names some which includes: Wodan, Aldagautr, Biflindi, Bileygr, Draugadróttinn, Dróttinn, Fengr, Fjölnir, Forni, Grímnir, Hangi, Hávi, Jölnir and Vegtam.
+    
+    He only has one eye because he bartered the other in order to drink from the well of Mimir and gain its knowledge. He had many abilities like astral projection, shapeshifting and control of the elements and weather. He also could read magic runes that no one else could since he had hung himself from the World Tree Yggdrasil while inflicting self-torture in order to gain great knowledge.
+    
+    Odin is the chief god of the Norse pantheon. He and his brothers Ve and Vili killed the frost giant Ymir and built the world from his body. He is also the father of most of the gods, including Thor, Vidarr and Baldur, who was later killed by a manipulated Hod with a dart of mistletoe. He is associated with his spear Gungnir, the wolves Geri and Freki and the two ravens Hugin and Munin, and the eight-legged horse Sleipnir.
+    
+    Odin is given primacy over female beings associated with the battlefield, the Valkyries, and he himself oversees the afterlife location Valhalla of Asgard, where he receives half of those who die in battle, the Einherjar. The other half are chosen by goddess Freya for her afterlife location, Fólkvangr. In Ragnarok, he gets devoured by the great wolf Fenrir.`,
+    origins: ['Norse']
   },
   {
     name: 'Okuninushi',
-    history: ``,
-    origins: []
+    history: `Formerly known as Onamuchi, Okuninushi (大国主, Oukuninushi)? is one of the Kunitsu and former ruler of Izumo, until Ninigi took over. In compensation, he was made ruler of the unseen realm of spirits and magic. He's said to be the god of nation-building, business and medicine.
+
+    Before becoming the ruler of Izumo, Okuninushi and his brothers, eighty gods altogether, were all suitors seeking the hand of Princess Yakami (or Yagami) of Inaba in marriage. They were all traveling together from their home country of Izumo to the neighboring Inaba to court her. 
+    
+    Along the way, the brothers encounter a poor little rabbit or hare, flayed and raw-skinned, lying in agony upon a sea shore. The group asks what happened, and the hare explains that he came from the island of Oki across the sea. The gods who listened on were cruel-hearted, and as a prank, instructed the hare to wash himself in the briny sea, and blow himself dry in the wind. The hare was of course in much more stinging pain than it was before.
+    
+    Then came along Ōkuninushi lagging far behind, due to evidently being treated as a luggage carrier. The gentle-hearted god told the hare to go to the mouth of the river and wash himself in the fresh water, then gather the flowering spikes of cattail plants growing all around and scatter the catkins on the ground and tumble around until he is covered by fleece. The cured rabbit makes a divined prediction that Okuninushi will be the one to win Princess Yakami.
+    
+    Just as the rabbit predicted, Princess Yakami/Yagami pronounces before the eighty gods that she chooses Okuninushi as her mate. The rival gods, his brothers, were all furious and conspire to slay him.
+    
+    They compel him, on pain of death, to chase down a red boar, which was really a boulder heated red hot. Okuninushi dies of burns, but his mother, Sashikuni-wakahime, petitions Kami-Masubi, one of the Kotoamatsukami, and she dispatches two clam goddesses, Kisagai-hime and Umugi-hime, to restore him.
+    
+    His rivals then trick him into walking onto a fresh tree log split open and held apart by a wedge, and snap him shut, killing him a second time. His mother revives him once again, and bids him to seek out Susano-o, who has been banished to the Netherworld.
+    
+    In the underworld, he met the storm god Susano-o and his daughter Suseri-Hime, with whom he shortly fell in love. Of course, Susano-o was aghast. In response, he sent Okuninushi through various trials, such as making Okuninushi sleep with snakes, centipedes and wasps and escape a burning meadow, which he survived thanks to a scarf that Suseri-hime gave him beforehand which protected him.
+    
+    By now, after all his various attempts of murder, Susano-o was beginning to actually approve of Okuninushi. One night, after he told Okuninushi to wash his hair and go to sleep, Okuninushi tied Susano-o's hair to the rafters of his palace, and fled with Suseri-hime. He took Susano-o's bow, arrows and koto with him. When the couple made their escape, the koto brushed against a tree, awakening Susano-o. The god jumped up, and pulled down the palace with his hair. At the borders of the underworld, Susano-o almost caught up with the elopers and called out to them, advising Okuninushi to fight his brothers with Susanoo's weapons. Okuninushi asked him to make Suseri-Hime his wife, and to build a palace at the foot of Mount Uka, which he agreed to. After the entire ordeal was over, Okuninushi became ruler of the province of Izumo.
+    
+    Sometime after this, Okuninushi was told to build the world with the help of the dwarf deity Sukuna-Hikona. The two together formulated the arts of medicine, means of controlling disasters caused by birds and insects and became close friends.`,
+    origins: ['Japanese']
   },
   {
     name: 'Ongyo-Ki',
-    history: ``,
-    origins: []
+    history: `An oni that was controlled by Fujiwara no Chikata. Ongyo-ki suppressed its aura to prevent enemies from sensing him, allowing him to surprise enemies when he attacked. It has been allegedly said that this is the origin of ninjitsu.`,
+    origins: ['Japanese']
   },
   {
     name: 'Oni',
-    history: ``,
-    origins: []
+    history: `Oni (鬼) are creatures from Japanese folklore, variously translated as demons, devils, Ogres or Trolls. They are popular characters in Japanese art, literature and theater. Oni are known for attacking villages and plundering food, riches and women.`,
+    origins: ['Japanese']
   },
   {
     name: 'Onmoraki',
-    history: ``,
-    origins: []
+    history: `In Shinto mythology, an Onmoraki is a bird-demon created from the spirits of freshly-dead corpses. They resemble a black crane, and if a person is caught sleeping in a temple's sermon hall, the Onmoraki will rebuke them while flapping its wings. Onmoraki are also said to shout the Degeneration Sutra in the household altar of priests who neglect to read their sutras.
+
+    In modern Japanese art, the Onmoraki will often take on the comical appearance of a roasted chicken. This is most likely due to the works of a eighteenth century artist, Toriyama Sekien.`,
+    origins: ['Japanese']
   },
   {
     name: 'Orichalcum',
-    history: ``,
-    origins: []
+    history: `Orichalcum is a yellow metal, prized in ancient times, and mentioned in stories like Atlantis; it may have been a noble metal such as platinum, as it was supposed to be mined, or one type of bronze or brass or possibly some other, similar metal alloy.
+
+    In 2015, metal ingots were found in an ancient shipwreck in Gela (Sicily), which were made of an alloy primarily consisting of copper, zinc and small percentages of nickel, lead and iron.`,
+    origins: ['Ancient Greco-Roman artifact']
   },
   {
     name: 'Orlov',
-    history: ``,
-    origins: []
+    history: `The Orlov is an Indian diamond which has never been officially weighed but estimated to be around 190 carats. It sets in the scepter named after the Russian Count, Grigory Grigorievich Orlov, by Empress Catherine the Great.`,
+    origins: ['Slavic artifact']
   },
   {
     name: 'Orobas',
-    history: ``,
-    origins: []
+    history: `According to the Lesser Key of Solomon, Orobas is the 55th demonic spirit and a powerful great prince of Hell who could give conjurers perfect information about the past, present or future, bestow honors, reconcile them with foes and protect them from being tempted by demons. He would never deceive anyone. He commands 20 legions of spirits (26 according to Harley 6483, considered the least reliable of the manuscripts). He supposedly also gives true answers of divinity and the creation of the world.
+
+    Orobas is faithful to the conjurer, does not permit that any spirit tempts him, and never deceives anyone. He is depicted as a horse that changes into a man under the conjurer's request.
+    
+    The name could come from Latin "orobias," a type of incense.`,
+    origins: ['Ars Goetia']
   },
   {
     name: 'Orthrus',
-    history: ``,
-    origins: []
+    history: `In Greek mythology, Orthrus was a two-headed dog and one of the many monsters sired by Typhon and Echidna. Among his siblings were Cerberus, Sphinx and Chimera to name but a few. Orthrus was the dog of the Titan Geryon, and along with Eurytion, was the guardian of Geryon's herd of red cattle. Geryon, Eurytion and Orthrus were all slain when Heracles was completing the tenth of his twelve labors.`,
+    origins: ['Greco-Roman']
   },
   {
     name: 'Ose',
-    history: ``,
-    origins: []
+    history: `Ose, also known as Osé, Oze, Oso or Voso, is the 57th demonic spirit of the Ars Goetia and a great president of Hell. He first appears as a leopard, but after some time will take the form of a man. He gives skill in all liberal sciences and true answers concerning divine and secret things. He can change any men into any shape the exorcist may desire, and the one that is changed will not know it.
+
+    He can also put them in a state of insanity in which the victim will believe that their identity has changed. The delusion, however, will only last for an hour. Ose governs over 30 legions of spirits.
+    
+    His name seems to derive from Latin 'os', mouth, language, or 'osor', that who abhors.`,
+    origins: ['Ars Goetia']
   },
   {
     name: 'Pale Rider',
-    history: ``,
-    origins: []
+    history: `The Pale Rider is the fourth and final Horseman of the Apocalypse, according to Christian scripture. The rider traditionally represents death. Despite typically being portrayed carrying a scythe as his weapon (much like the Grim Reaper), in the Book Of Revelation, he is described as bringing Hades (Hell) wherever he rides as his symbol. His color being pale, as opposed to an actual color, could be reflecting the sickly appearance of a corpse (though old translations could be interpreted as the rider being pale green and yellowish green.)
+
+    "When the Lamb broke the fourth seal, I heard the voice of the fourth living creature saying, “Come.” I looked, and behold, an ashen horse; and he who sat on it had the name Death; and Hades was following with him. Authority was given to them over a fourth of the earth, to kill with sword and with famine and with pestilence and by the wild beasts of the earth." — Revelation 6:7-8
+    `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Parvati',
-    history: ``,
-    origins: []
+    history: `Parvati is the Hindu goddess of fertility, love, beauty, harmony, marriage, children, and devotion; as well as of divine strength and power. This beautiful goddess is also the second consort of Shiva in the Hindu mythology. A mountain princess, she is the reincarnation of the goddess Sati (Shiva's first consort), and won Shiva's love in her previous life despite his asceticism, but immolated herself after her father's disapproval. Reborn as Parvati, daughter of the snow mountain god Himalayas, she sought Shiva out. Because the gods required Shiva's offspring to defeat their fierce adversaries, they sacrificed Kama in order to stoke Shiva's suppressed desire for a female partner. The two reunited eventually and together gave birth to Kartikeya and later on Ganesha. They have the ability to merge into the half-male, half-female Ardha.﻿
+
+    The goddess Durga considered the fiercer, demon-fighting aspect of Parvati while Kali is considered by Hindus to be an aspect of Durga.`,
+    origins: ['Hindu']
   },
   {
     name: 'Pazuzu',
-    history: ``,
-    origins: []
+    history: `Pazuzu is the Mesopotamian god of the southwest wind known for bringing famine during dry seasons, and locusts during rainy seasons. Recent research suggests Pazuzu may have been associated with a cold, northeasterly wind. Pazuzu was said to be invoked in amulets which combat the powers of the malicious goddess, and hated rival, Lamashtu, who was believed to cause harm to mother and child during childbirth. Although Pazuzu is said to be an evil spirit himself, he drives away other evil spirits, thus protecting humans against plagues and misfortunes.`,
+    origins: ['Mesopotamia']
   },
   {
     name: 'Phoenix',
-    history: ``,
-    origins: []
+    history: `The phoenix is a mythical sacred fire bird which originated in the sub-continent of India in ancient mythologies mentioned in the Egyptian and later the Phoenician and the Greek Mythology.
+
+    A phoenix is a mythical bird with a tail of beautiful gold and red plumage. It has a 500 to 1,000 year life-cycle, near the end of which it builds itself a nest of twigs that it then ignites; both nest and bird burn fiercely and are reduced to ashes, from which a new, young phoenix or phoenix egg arises, reborn anew to live again. The new phoenix is destined to live as long as its old self. In some stories, the new phoenix embalms the ashes of its old self in an egg made of myrrh and deposits it in the Egyptian city of Heliopolis. The bird was also said to regenerate when hurt or wounded by a foe, thus being almost immortal and invincible — it is also said that it can heal a person with a tear from its eyes and make them temporarily immune to death. The phoenix is a symbol of fire, divinity, resurrection and rebirth out of the ashes or chaos.
+    
+    In some official English translations of Chinese material, the Chinese Feng Huang and Zhu Que are sometimes incorrectly named "Phoenix."`,
+    origins: ['Chinese', 'Hindu', 'Persian', 'Arabian', 'European', 'Greco-Roman']
   },
   {
     name: 'Pisaca',
-    history: ``,
-    origins: []
+    history: `Pisacas are demonic creatures that feast on human meat, especially corpses. They are mentioned to be on the same level as other abominations, such as Rakshasa, and are considered to be the physical incarnation of ignus fatuus. The origin of their names is believed to have been a result of the demonization of Hindu tribes by Aryan people.
+
+    They like darkness and haunt cremation grounds along with other demons like Bhutas (meaning ghosts) and Vetalas. Pisacas have the power to assume different forms at will and may also become invisible. Sometimes, they possess human beings, and the victims are afflicted with a variety of maladies and abnormalities like insanity. Certain mantras are supposed to cure such afflicted persons, and drive away the Pisaca which may be possessing that particular human being. In order to keep the Pisacas away, they are given their share of offerings during certain religious functions and festivals.`,
+    origins: ['Hindu']
   },
   {
     name: 'Pixie',
-    history: ``,
-    origins: []
+    history: `According to the local folklore of southwest England, pixies are small mischievous creatures that inhabit the countryside and woodlands that like to play pranks on humans. Depending on the tale told, pixies can vary in size from tiny enough to fit in the palm of a human's hand to the size of a small child, although they are always a good deal below the size of an average human. They can be portrayed with or without wings, and over the years have taken on many traits usually associated with fairies, often leading to the common misconception that they are one and the same.
+
+    Pixies are sometimes said to be born in much the same way as humans, however some tales tell that they are humans transformed through misdeeds or magic. They play pranks on humans such as stealing their belongings, throwing things or calling out their names. They may also steal horses during the night and return them by the morning with tangled manes. While pixies usually don't cause any real harm, it is said that if someone follows the voices of pixies, they will never return.`,
+    origins: ['English']
   },
   {
     name: 'Power',
-    history: `Principality`,
-    origins: []
+    history: `Powers are the sixth of the nine orders of angels, also said to be called Authorities. It is said that they were the first order to be created. The Powers are the bearers of conscience and the keepers of history. They are academically driven and are concerned with ideology, philosophy, theology, religion and documents pertaining to those studies. Powers are the brain trusts; a group of experts who serve as advisers and policy planners. They are also the warrior angels created to be completely loyal to God. Some believe that no Power has ever fallen from grace, but another theory states that Satan was the Chief of the Powers before he fell (see also Ephesians 6:12). Their duty is to oversee the distribution of power among humankind, hence their name.`,
+    origins: ['Abrahamic']
+  },
+  {
+    name: 'Principality',
+    history: `A Principality (Principalities for multiple) is an angel of the Third Sphere in Christian angelology, their duty also is said to be to carry out the orders given to them by the Dominions and bequeath blessings to the material world. Their task is to oversee groups of people. As beings related to the world of the germinal ideas, they are said to inspire living things to many things such as art or science.
+
+    In the Kabbalah, they inhabit the sephirah Netzach and rule over love and beauty, with Haniel being their leader.`,
+    origins: ['Abrahamic']
   },
   {
     name: 'Queen Mab',
-    history: ``,
-    origins: []
+    history: `Mab, also known as Medb or Meive, is the queen of Connacht. Famous for her capricious nature and her many lovers, she wages many wars for the sake of her continued glory. The Cattle Raid of Cooley makes her cross paths with her archenemy Cu Chulainn, who shamed her numerous times by slaying her pets, warriors and handmaidens.
+
+    Queen Mab is said to be the queen of the Unseelie Court and the dark counterpart of the fairy queen Titania. She was first referred as a fairy in William Shakespeare's play Romeo and Juliet, where "she is the fairies' midwife." Later, she appears in other poetry and literature, and in various guises in drama and cinema. In the play, her activity is described in a famous speech by Mercutio written originally in prose and often adapted into iambic pentameter, in which she is described as a miniature creature who performs midnight pranks upon sleepers. Being driven by a team of atomies, she rides her chariot over their noses and "delivers the fancies of sleeping men." She is also described as a midwife to help sleepers "give birth" to their dreams.
+    
+    She was immortalized in Mercutio's legendary monologue of "Romeo And Juliet" (Act I, Scene 4), which is often called the "Queen Mab Speech," which included:
+    
+    And in this state she gallops night by night
+    Through lovers' brains, and then they dream of love
+    O'er courtiers' knees, that dream on court'sies straight
+    O'er lawyers' fingers, who straight dream on fees
+    O'er ladies' lips, who straight on kisses dream
+    Which oft the angry Mab with blisters plagues...`,
+    origins: ['Celtic', 'English', 'European', 'Modern Fiction']
   },
   {
     name: `Queen's Necklace`,
@@ -1033,43 +1151,69 @@ const myths = [
   },
   {
     name: 'Raja Naga',
-    history: ``,
-    origins: []
+    history: `In Hindu mythology, there are many recorded kings of nagas and many stories involving them, they are known as Raja Naga (or Naga kings). Raja Naga also appear in Buddhist mythology, and their duties consist of leading the nagas and protecting and worshipping the Buddha, along with protecting other enlightened beings.
+    `,
+    origins: ['Hindu', 'Buddhist']
   },
   {
     name: 'Rakshasa',
-    history: ``,
-    origins: []
+    history: `A rakshasa is a demon or unrighteous spirit in Hindu and Buddhist mythology. Rakshasas are also called cannibals.
+
+    According to the Ramayana, rakshasas were created from Brahma's foot; other sources claim they are descended from Pulastya, or from Khasa, or from Nirriti and Nirrita. Legend has it that many rakshasas were particularly wicked humans in previous incarnations. Rakshasas are notorious for disturbing sacrifices, desecrating graves, harassing priests, possessing human beings and so on. Their fingernails are venomous, and they feed on human flesh and spoiled food. They are shapeshifters, illusionists and magicians. Ravana is said to be the king of rakshasas.
+    
+    In Japan, the rakshasa is known as Rasetsu, and in Shingon is identified as the lord of demons (Rasetsuten) and guardian of the southwest. It is depicted as horse-headed. Taraka is said to be a Rakshasa.`,
+    origins: ['Hindu', 'Buddhist']
   },
   {
     name: 'Rangda',
-    history: ``,
-    origins: []
+    history: `Rangda is the demon queen of the leyaks in Bali, according to traditional Balinese mythology. Terrifying to behold, the child-eating Rangda leads an army of evil witches against the leader of the forces of good, Barong.
+
+    It is suggested that Rangda may be derived from the 11th century Javan queen Mahendradatta who was exiled by the king, Dharmodayana, for allegedly practicing witchcraft. The tale surrounding this is that she proceeded to take her revenge by killing off half the kingdom, which by then belonged to her and Dharmodayana's son Erlangga, with plague before being overcome by a holy man. The name Rangda itself means "widow" in old Javanese and Balinese language. It may also be associated with the legend of a demon queen named Calon Arang, who wreaked havoc in late 10th century Java, during the reign of Airlangga.
+    
+    Rangda is important in Balinese culture, and performances depicting her struggles with Barong or with Airlangga in that tale are popular tourist attractions as well as tradition. She is depicted as a mostly nude old woman, with long and unkempt hair, pendulous breasts and claws. Her face is traditionally a horrifying fanged and goggle-eyed mask, with a long, protruding tongue.
+    
+    It has been suggested that Rangda may be closely associated with the Hindu warrior mother goddess Durga, or the black goddess of destruction Kali, given that Bali is a Hindu island. While Rangda is mainly seen as fearsome and a personification of evil, she is also seen as a protective figure in some parts of Bali. The colors associated with Rangda are red, black and white, and these colors are also associated with Kali, and her iconography is also similar to Kali. Mahendradatta, the queen Rangda might be based on, was known for her devotion to the cult of Durga in Bali.`,
+    origins: ['Balinese']
   },
   {
     name: 'Raphael',
-    history: ``,
-    origins: []
+    history: `Within the hierarchy of angels from Christian mythology, Raphael, or Raphaela is one of the four seraphim or archangels of God.
+
+    His name means "It is God that heals." He is said to be the guardian of the Tree of Life, opposite the Tree of Knowledge in the Garden of Eden. He also expounds to Adam the War in Heaven in which Lucifer and the Fallen angels fell, and the creation of the Earth. Raphael first appears disguised in human form as the travelling companion of Tobit's son Tobiah, calling himself "Azarias the son of the great Ananias".
+    
+    Most of Raphael's exploits take place in the Apocrypha, where he has roles as imprisoner of Azazel (an Angel that gets exiled from Heaven for having sex with human females and one of the Grigori) and guide of Sheol, the Hebrew underworld. Although Raphael is not named in the Bible, theologians believe he was the archangel who healed the infirm at the Bethesda pond described in the Gospels. He is also thought to be one of the three angels who visited the patriarch Abraham and his wife, Sarah, to help with their conception; as well as the angel who healed Abraham’s grandson Jacob’s wrestling injuries and who gave King Solomon his magical ring.
+    
+    Though he is not depicted as a lover of another being, Raphael appears in The Lovers Tarot Card, and his status of the patron Saint of lovers due to his involvement of uniting Sarah & Tobias in the Book of Tobit. Raphael is also portrayed in religious art as carrying a stick or cane and walking, often leading a lost child or traveler back to the right direction, symbolizing Raphael's role as patron saint of travelers and exemplary guardian angel. Saint Raphael is also accounted as a patron of the blind, happy meetings, nurses, physicians, medical workers, matchmakers, Christian marriage, and Catholic studies.
+    
+    Raphael is the angel responsible for signaling the coming of Judgment Day by blowing the trumpet (namely Sûr) and sending out a "Blast of Truth". According to tradition, the trumpet will be blown two times. According to some sources, the demon lord Asmodeus is his counterpart and they have a longstanding feud with each other. Not all branches of these religions consider the identification of Raphael to be canonical.
+    `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Red Rider',
-    history: ``,
-    origins: []
+    history: `The second of the Four Horsemen of the Apocalypse, named War. He represents war, and his horse is colored "fiery" red. He holds a great sword upwards as though ready to battle or mass slaughter. The sword is meant to suggest that blood will be spilled. The great sword being held upwards can also be viewed as a declaration of war, as typically, crossed swords held upward in heraldry signify entering in battle. He takes peace from the Earth and allows men to kill one another.
+
+    "When He broke the second seal, I heard the second living creature saying, “Come.” And another, a red horse, went out; and to him who sat on it, it was granted to take peace from the earth, and that men would slay one another; and a great sword was given to him."
+    
+    — Revelation 6:3-4
+    `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Regent',
-    history: ``,
-    origins: []
+    history: `Regent is based on the Regent Diamond, a 141 carat diamond originating from India. It was named as such when it was purchased by Regent Philippe II, Duke of Orléans.`,
+    origins: ['European']
   },
   {
     name: 'Saki Mitama',
-    history: ``,
-    origins: []
+    history: `In Japanese belief, Saki Mitama is a part of the soul that brings good fortune and blessings. It is said to bring prosperity in hunting, fishing and harvests, however some believe this is actually the purpose of Nigi Mitama.`,
+    origins: ['Japanese']
   },
   {
     name: 'Sandalphon',
-    history: ``,
-    origins: []
+    history: `Sandalphon is an archangel or seraphim that is prominently featured in Jewish mysticism, such as the Kabbalah where he resides in the Sephirot of Malkuth alongside his "twin brother" Metatron. Sandalphon is said to be responsible for determining the gender of a person in one's embryonic state, and in other accounts said to be a guardian angel who delivers prayers to God.
+    `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Sandman',
@@ -1080,13 +1224,22 @@ const myths = [
   },
   {
     name: 'Sarasvati',
-    history: ``,
-    origins: []
+    history: `Hindus believe that Sarasvati is the goddess of knowledge, music and the arts. Sarasvati, also known as Saraswati, has been identified with the Vedic Sarasvati River. She is considered as consort of Brahma, the Hindu god of creation. Thus, with the goddesses Lakshmi and Parvati or Durga, she forms the Tridevi, who are consorts of the male trinity of Brahma, Vishnu and Shiva, respectively. Sarasvati's children are the Vedas, which are the oldest sacred texts of Hinduism. She is known in East Asia as Benzaiten or Biancaitian (弁財天, Benzaiten)?, one of the Seven Lucky Gods.`,
+    origins: ['Hindu']
   },
   {
     name: 'Satan',
-    history: ``,
-    origins: []
+    history: `Satan is a prominent figure in the Abrahamic religions, playing various roles in their literature. The Old Testament and Judaism describes Satan as an accuser who tempts mankind to commit sin to show God how mankind can easily be led astray from him. In the Book of Job and the Kabbalah in particular, Satan is even able to take control of the life of a person in the stead of God, though only to the extent which God allows.
+
+    In contrast, the New Testament depicts Satan as a rebel and an opposer to the will of God. In the Gospels, he is shown trying to tempt Christ away from the role of messiah, and Jesus denounced Satan as the father of lies. The Book of Revelation later names Satan as the devil leading an army of angels into a war with Michael and the rest of heaven. 
+    
+    Regardless of which interpretation is the case, Satan often appears to those who are sinful, playing into their hearts and towing them into despair and further sin. In Islam, he is regarded as an instrument of God's wrath, and several classifications of demons also associate Satan with Wrath of the seven deadly sins.
+    
+    In modern Christianity and literature with Abrahamic influence, Satan is typically considered one of the many names or titles referring to the devil in Christianity, who rallied other angels against the authority of God, after which they fought against the forces of God, were utterly defeated and then cast down into hell, becoming demons. Megami Tensei does not depict Satan as the devil (the role goes to Lucifer in Megami Tensei), instead based on Satan's appearance in the Book of Job.
+    
+    Throughout history, Satan's figure has been linked with other dark entities from mythology, such as Seth, Hades, Ahriman and Mara, while some other religious currents such as Gnosticism portray him as the evil deity Yaldabaoth. In the Talmud, he is often equated with the angel of death Samael, and in the Book of Jubilee, he is either the same entity as, or at least very similar to, Mastema.
+    `,
+    origins: ['Abrahamic']
   },
   {
     name: 'Satanael',
@@ -1099,58 +1252,85 @@ const myths = [
   },
   {
     name: 'Scathach',
-    history: ``,
-    origins: []
+    history: `Scathach ("Shadowy") also known as 'The Shadowy One', is a legendary figure in the Ulster Cycle of Irish mythology. She is a legendary Scottish warrior woman and martial arts teacher who trains the legendary Ulster hero Cu Chulainn in the arts of combat. Texts describe her homeland as "Alpi," which commentators associate with Alba, the Gaelic name of Scotland; she is especially associated with the Isle of Skye, where her residence Dún Scáith (Fort of Shadows) stands.
+
+    Scathach's instruction of Cu Chulainn appears in Tochmarc Emire (The Wooing of Emer), a foretale to the great epic "Táin Bó Cúailnge." Cu Chulainn and Emer fall in love, but her father Forgall forbade the union until Cu Chulainn has completed his warrior training. Cu Chulainn and his friend Ferdiad travel to Dún Scáith, where Scathach teaches them feats of arms, and gives Cu Chulainn his deadly spear, the Gáe Bulg.
+    
+    Cu Chulainn begins an affair with Scathach's daughter Uathach, but accidentally breaks her fingers. She screams, calling her lover Cochar Croibhe to the room. Despite Uathach's protests, he challenges Cu Chulainn to a duel; Cu Chulainn dispatches him easily.
+    
+    To make it up to Uathach and Scathach, Cu Chulainn assumes Cochar's duties, and becomes Uathach's lover. Scathach eventually promises her daughter to him, without requiring the traditional bride price. Scathach also grants Cu Chulainn the "friendship of her thighs" (they have sex) when his training is almost complete. When her rival, the warrior woman Aífe (also assumed to be Scathach's twin sister), threatens her territory, Cu Chulainn defeats her in battle and forces her to make peace. Aífe also sleeps with Cu Chulainn, producing his son Connla, who Cu Chulainn kills years later without realizing he is his son.
+    `,
+    origins: ['Irish', 'Scottish', 'Celtic']
   },
   {
     name: 'Seiryu',
-    history: ``,
-    origins: []
+    history: `The Azure Dragon is one of the Four Symbols (四象) of Chinese constellations along with Vermillion Bird, White Tiger and Black Tortoise . It represents the East, spring, the color azure (green/blue) and the Wood Element. In Japan, it is one of the four guardian spirits of cities and protects Kyoto.
+
+    In some official English versions this demon is incorrectly translated as Long due to confusion between Four Symbols (Si Xiang) and four benevolent animals (Si Ling or Ssu-Ling) of China. In the original Japanese version, Seiryu or Qing Long represents one of the Four Symbols and Ryu or Long belongs to four benevolent animals which are fundamentally different.`,
+    origins: ['Japanese', 'Chinese', 'Korean']
   },
   {
     name: 'Setanta',
-    history: ``,
-    origins: []
+    history: `Setanta is Cu Chulainn's given name. He obtained his more famous name when he killed Culann's guard dog in self-defense and volunteered to take its place ("Cu Chulainn" means "Culann's Hound").`,
+    origins: ['Celtic']
   },
   {
     name: 'Seth',
-    history: ``,
-    origins: []
+    history: `Set, also spelled Seth, Sutekh or Sūtaḫ, is a deity from Egyptian mythology. Set is the deity of deserts, storms and chaos and served as one of the greatest deities in Egyptian myth. Set was married to the goddess Nephthys, who was also his sister. He killed and dismembered his brother Osiris out of jealousy. Isis, Osiris' wife and sister, reassembled him and Osiris became the ruler of the dead. Isis gave birth to Osiris's child, Horus, who became an enemy of Set. In earlier myths, Set fought Apep each night as Ra journeyed through the underworld. Set had been demonized to some extent, and the Greeks interpreted him to be a force of evil, which may be one of the reasons he is viewed as an antagonistic force in later depictions.`,
+    origins: ['Egyptian']
   },
   {
     name: 'Shiisaa',
-    history: ``,
-    origins: []
+    history: `Shiisaa is a shishi-like creature said to be a protective spirit or guardian deity in Okinawan mythology. Shiisa are holy beasts that possess the power to repel demons and exorcise evil spirits that cause fires. A legendary creature said to repel disasters and misfortune and bring good luck to villages. Shiisa resemble a cross between a lion and a dog. Their form is thought to be derived from the lions of the ancient Orient.
+
+    Shiisa statues can be found in a variety of places, such as on the roofs of houses and outside temples. The statues are placed so that they face northeast (toward the Demon gate), south (to guard against fire), or the direction of a gate or cross-street. Paired figurines of them are often set at entrances to houses. In Okinawa, souls of the deceased become balls of fire and will burn houses, but Shiisaa keeps such spirits out.
+    
+    There are many stories about it in Ryukyu lore. They are the local version of the Chinese shishi.`,
+    origins: ['Japanese', 'Chinese']
   },
   {
     name: 'Shiki-Ouji',
-    history: ``,
-    origins: []
+    history: `The Shikiouji (or Shiki-Ouji) is an exceptionally powerful type of Shikigami that could only be summoned as a servant by the most elite of those that practiced the mystical arts of Yin and Yang. It could be used to scare away demons that cause sickness and to ward off disasters to its master. The Shikiouji's basic nature is said to be very close to that of an Oni and is thus very ferocious, making it very dangerous for average mystics to attempt to summon it.`,
+    origins: ['Japanese']
   },
   {
     name: 'Shiva',
-    history: ``,
-    origins: []
+    history: `In the Hindu religion, Shiva the Destroyer is one of the three principal deities of the Trimurti (Hindu Male Triad) along with Brahma the Creator and Vishnu the Preserver. He originally evolved from the early Vedic god, Rudra, and is now the supreme deity within Shaivism, a branch of Hinduism that focuses on the worship of Shiva. While he is known as the destroyer, he is also considered to be a benevolent and beneficial force, as without destruction, new creation couldn't take place. He also acts against premature destruction, going far enough to withstand great suffering. He is depicted with up to four arms, a third eye, a blue throat, matted hair, carrying a trident and a drum, is often accompanied by a serpent and rides on the back of the sacred bull Nandi.
+
+    The first of Shiva's best known attributes is his third eye, which he once used to burn the god of love, Kamadeva, to ashes. The effulgence from this act was so hot that not even the god of fire, Agni, could handle it, and was used to create the war god Kartikeya. Shiva also has a blue throat that was caused when he swallowed the most deadly poison in the world, Halahala, the poison of the primordial snake Vasuki, earning him the name Vishakantha (one who held poison in his throat). This act is further proof of his benevolent and self-sacrificing nature.
+    
+    He is the husband of the goddess Parvati, or Shakti, in all her incarnations and has two sons, Ganesha and Skanda. He also has many incarnations that would go on to become sacred figures in their own right such as Shankara and Hanuman. Shiva is also worshiped in forms born from the fusion of himself and other gods, such as Harihara when fused with Vishnu or Ardhanarishvara when he's fused Parvati or Shakti.
+    
+    Followers of a religion called Shaktism believe the Shiva is an aspect or reflection of the Divine Mother, or Shakti.
+    
+    Another name for Shiva is Mahakala, who, in Buddhism, is a fierce protector deity who is equivalent to Shiva.`,
+    origins: ['Hindu']
   },
   {
     name: 'Siegfried',
-    history: ``,
-    origins: []
+    history: `Siegfried is the dragon-slaying hero of the medieval German epic Das Nibelungenlied, most widely known due to its adaptation by Richard Wagner into a series of four operas, Der Ring des Nibelungen. The character of Siegfried and much of the plot of the medieval German epic originate from earlier Norse sagas, where the character is known as Sigurd.
+
+    Sigurd was requested to slay Fafnir by Regin, his foster parent and guardian. Regin was the brother of Otr and Fafnir and son of Hreidmar. Otr was killed by the Aesir after they mistook him for an otter, and as compensation had his body stuffed with gold. Fafnir then killed Hreidmar and stole the "Otr's Gold," and to better guard it, turned himself into a dragon.
+    
+    Sigurd met Odin on his way, who advised the hero to dig trenches to drain the dragon's blood, which apparently gave him invulnerability. He killed Fafnir when the dragon walked over the trench, and bathed himself in the blood. However, a leaf had fallen and stuck itself on his shoulder. When he drank some of the blood, he understood the language of the birds and learned that Regin was plotting his death. As retaliation, he killed Regin first. Despite gaining the gold, however, it brought him no happiness.`,
+    origins: ['Norse']
   },
   {
     name: 'Silky',
-    history: ``,
-    origins: []
+    history: `According to the book The Fairy Bible: The Definitive Guide to the World of Fairies written by Teresa Moorey, the Silky is a female fairy from the borders of Scotland, known to "wear rustling silk as she does household chores" and "terrorizes lazy servants."`,
+    origins: ['Scottish', 'Irish']
   },
   {
     name: 'Skadi',
-    history: ``,
-    origins: []
+    history: `Skadi (Norse: Skaði), alternatively referred as Öndurguð or Öndurdís (lit: Snowshoe goddess) is a jötunn, a giantess in Norse mythology. Associated with skiing, the hunt and winter, she is the daughter of Thjazi, one-time wife of the god Njörður, and stepmother of Freyr and Freya.`,
+    origins: ['Norse']
   },
   {
     name: 'Slime',
-    history: ``,
-    origins: []
+    history: `A slime, also commonly called ooze, are common types of monsters in many fantasy role-play games. True to their name, they don't usually have any distinct shape and appear as large masses of gelatinous fluid. Slimes and oozes vary between mediums, with some being intelligent and capable of assuming basic shapes with others being nothing more than brainless piles of goo that dissolve whatever matter becomes enveloped by their bodies.
+
+    Like oozes, many slimes dwell underground, and most secrete an acid from their skin that dissolves flesh and other materials rapidly. In D&D, slimes are essentially blind, but more than make up for that with an ability called "blindsight," which allows them to discern nearby objects and creatures without needing to see them visually.`,
+    origins: ['American', 'Pop-culture']
   },
   {
     name: 'Sraosha',
