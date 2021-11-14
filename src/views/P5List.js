@@ -105,9 +105,8 @@ export default {
     },
     filter(text) {
       this.currentPage = 1;
-      text = text.toLowerCase();
-      var filteredResult = this.filterByFields(text);
-      this.list = this.paginate(filteredResult);
+      const filteredResult = this.filterByFields(text.toLowerCase());
+      this.list = filteredResult;
       this.totalRecords = filteredResult.length;
     },
     filterByFields(text) {
